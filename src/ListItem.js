@@ -5,11 +5,9 @@ export default ({ repository, like }) => (
     <Text style={styles.repository}>{repository.title}</Text>
     <View style={styles.techsContainer}>
       {repository.techs.map((tech, index) => (
-        <>
-          <Text key={index} style={styles.tech}>
-            {tech}
-          </Text>
-        </>
+        <Text key={index} style={styles.tech}>
+          {tech}
+        </Text>
       ))}
     </View>
 
